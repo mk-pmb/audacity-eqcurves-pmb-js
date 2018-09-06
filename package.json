@@ -1,0 +1,31 @@
+{ "name": "audacity-eqcurves-pmb",
+  "version": "0.0.1",
+  "description": "My collection of equalizer presets for Audacity.",
+  "keywords": [
+    "audacity",
+    "equalizer",
+    "preset"
+  ],
+
+  "author": "M.K. (https://github.com/mk-pmb)",
+  "homepage": "https://github.com/mk-pmb/audacity-eqcurves-pmb-js/#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mk-pmb/audacity-eqcurves-pmb-js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mk-pmb/audacity-eqcurves-pmb-js/issues"
+  },
+  "contributors": [],
+
+  "private": false, "license": "ISC",
+  "main": "src/lib_eqcurve.mjs",
+  "scripts": { "test": "nodejs test/all.js" },
+  "directories": { "test": "test" },
+
+  "dependencies": {},
+  "devDependencies": {},
+
+
+  "npm vs. BOM = Unexpected token": "-*- coding: UTF-8 -*-"
+}
