@@ -8,12 +8,14 @@ import eqCurve from '../src/lib_eqcurve';
 const curve = { name: 'DTMF enhancer' };
 
 const halfEnvelope = [
-  { dist: 0,    gain: 24 },
-  { dist: 2,    gain: 20 },
-  { dist: 2.5,  gain: 0 },
+  { dist: 0, gain: 24 },
+  // having points in between is useless because Audacity has limits
+  // on how bendy the effectively used curve (green line) is. See
+  // https://manual.audacityteam.org/man/equalization.html
+  { dist: 30, gain: 0 },
 ];
 const fullEnvelope = [
-  ...halfEnvelope.slice(1).reverse().map(h => ({ ...h, gain: -h.gain })),
+  ...halfEnvelope.slice(1).reverse().map(h => ({ ...h, dist: -h.dist })),
   ...halfEnvelope,
 ];
 

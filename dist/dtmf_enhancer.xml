@@ -1,42 +1,26 @@
 <equalizationeffect><curve name="DTMF enhancer">
-  <point f="699.5" d="0" />
-  <point f="699" d="-20" />
+  <point f="667" d="0" />
   <point f="697" d="24" />
-  <point f="699" d="20" />
-  <point f="699.5" d="0" />
-  <point f="772.5" d="0" />
-  <point f="772" d="-20" />
+  <point f="727" d="0" />
+  <point f="740" d="0" />
   <point f="770" d="24" />
-  <point f="772" d="20" />
-  <point f="772.5" d="0" />
-  <point f="854.5" d="0" />
-  <point f="854" d="-20" />
+  <point f="800" d="0" />
+  <point f="822" d="0" />
   <point f="852" d="24" />
-  <point f="854" d="20" />
-  <point f="854.5" d="0" />
-  <point f="943.5" d="0" />
-  <point f="943" d="-20" />
+  <point f="882" d="0" />
+  <point f="911" d="0" />
   <point f="941" d="24" />
-  <point f="943" d="20" />
-  <point f="943.5" d="0" />
-  <point f="1211.5" d="0" />
-  <point f="1211" d="-20" />
+  <point f="971" d="0" />
+  <point f="1179" d="0" />
   <point f="1209" d="24" />
-  <point f="1211" d="20" />
-  <point f="1211.5" d="0" />
-  <point f="1338.5" d="0" />
-  <point f="1338" d="-20" />
+  <point f="1239" d="0" />
+  <point f="1306" d="0" />
   <point f="1336" d="24" />
-  <point f="1338" d="20" />
-  <point f="1338.5" d="0" />
-  <point f="1479.5" d="0" />
-  <point f="1479" d="-20" />
+  <point f="1366" d="0" />
+  <point f="1447" d="0" />
   <point f="1477" d="24" />
-  <point f="1479" d="20" />
-  <point f="1479.5" d="0" />
-  <point f="1635.5" d="0" />
-  <point f="1635" d="-20" />
+  <point f="1507" d="0" />
+  <point f="1603" d="0" />
   <point f="1633" d="24" />
-  <point f="1635" d="20" />
-  <point f="1635.5" d="0" />
+  <point f="1663" d="0" />
 </curve></equalizationeffect>
