@@ -1,5 +1,8 @@
 // -*- coding: utf-8, tab-width: 2 -*-
 
+import flatMap from './flatmap';
+
+
 function numFmt(x) { return x.toFixed(8).replace(/\.?0*$/, ''); }
 
 function pointLine(pt) {
@@ -37,8 +40,32 @@ function pointsToXml(curve) {
 }
 
 
+function symmetricEnvelope(midFreq, shape) {
+  if (midFreq.map) {
+    return flatMap(midFreq, f => symmetricEnvelope(f, shape));
+  }
+  const low = [];
+  const high = [];
+  shape.forEach(({ dist, gain }) => {
+    if (dist) { low.push({ freq: midFreq - dist, gain }); }
+    high.push({ freq: midFreq + dist, gain });
+  });
+  return low.reverse().concat(high);
+}
+
+
+function simpleMountain(peakFreq, peakGain, halfWidth) {
+  return symmetricEnvelope(peakFreq, [
+    { dist: 0, gain: peakGain },
+    { dist: halfWidth, gain: 0 },
+  ]);
+}
+
+
 export default {
   numFmt,
   pointLine,
   pointsToXml,
+  simpleMountain,
+  symmetricEnvelope,
 };

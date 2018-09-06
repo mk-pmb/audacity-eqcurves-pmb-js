@@ -1,5 +1,5 @@
 { "name": "audacity-eqcurves-pmb",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "My collection of equalizer presets for Audacity.",
   "keywords": [
     "audacity",
@@ -24,7 +24,9 @@
   "directories": { "test": "test" },
 
   "dependencies": {},
-  "devDependencies": {},
+  "devDependencies": {
+    "nodemjs": "^0.1.2"
+  },
 
 
   "npm vs. BOM = Unexpected token": "-*- coding: UTF-8 -*-"

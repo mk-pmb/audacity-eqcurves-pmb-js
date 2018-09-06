@@ -9,7 +9,7 @@ My collection of equalizer presets for Audacity.
 <!--/#echo -->
 
 
-* Recipes are in `recipes/`. Run them with [`nodemjs`][nodemjs].
+`recipes/*.mjs` &rarr; `./util/bake_all.sh` &rarr; `dist/*.xml`
 
 
 <!--#toc stop="scan" -->
@@ -25,8 +25,6 @@ Known issues
 
 
 &nbsp;
-
-  [nodemjs]: https://www.npmjs.com/package/nodemjs
 
 License
 -------
