@@ -11,14 +11,23 @@ const shape = [
   Having points in between is useless because Audacity has limits
   on how bendy the effectively used curve (green line) is. See
   https://manual.audacityteam.org/man/equalization.html
+  Update: Or maybe not? This thread says you can get steeper curves
+  by increasing the "Length of Filter" setting:
+  https://forum.audacityteam.org/viewtopic.php?t=64754
+  Anyway, I've had enough for today dealing with humongous windows
+  (see below).
 
   Unfortunately I haven't found any option to zoom the equalizer
   graph or to restrict its displayed range in Audacity 2.0.5,
   so to actually see it, select "linear frequency scale" and make
   the window absurdly huge:
   wmctrl -r Equaliz -e 0,-1700,-700,28000,2000
-  Make sure you don't have any other windows with similar titles open.
   Might take up to two repeats until it's positioned correctly.
+  Make sure you don't have any other windows with similar titles open.
+  Even better, don't have ANYTHING else open, because your X session
+  might freeze from such huge windows. (Took several minutes until
+  my emergency SysRq OOM request came through. Too bad for you if
+  it's disabled on your machine or you aren't sure which keys.)
   */
 
   { dist: 30, gain: 0 },

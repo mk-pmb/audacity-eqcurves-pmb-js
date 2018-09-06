@@ -15,6 +15,18 @@ My collection of equalizer presets for Audacity.
 <!--#toc stop="scan" -->
 
 
+To do
+-----
+
+Feel free to remind me on the bug tracker
+if you're interested in some of these:
+
+* Make a comfortable preview for what would be the effective curve
+  used by audacity, given the points defined in some EQCurve file.
+  * Upgrade to full-fledged editor.
+
+
+
 
 Known issues
 ------------
